@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+  
+body {
+  width: 100%;
+  height: auto;
+  display: flex; 
+  flex-direction: column;
+  overflow-x: hidden;
+  background-color: rgba(238, 130, 238, 0.212);
+}
+
+header{
+  padding-bottom: 6%;
+  position: relative;
+  width: 100%;
+}
+
+#header-img {
+  width: 100%;
+  height: 70vh;
+  margin-bottom: 10px;
+}
+
+.header-text {
+  text-align: center;
+  font-size: 26px;
+  background-image: linear-gradient(to right, #43464a1f, #6365694b, #85868941, #a9a9ab48, #cdcdce56, #c8c8c969, 
+  #c4c4c57a, #bfbfc079, #91919398, #6566687c, #3d3d407c, #18191c75);
+  color: rgb(155, 11, 83);
+  position: absolute;
+  top: 28%;
+  padding: 2%;
+  height: 30%;
+  width: 100%;
+}
+
+.fa-linkedin {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  margin: 0 auto;
+  background-color:  rgb(104, 101, 101);
+  color: rgb(155, 11, 83);
+  text-decoration: none;
+  font-size: 28px;
+}
+
+.fa-github {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  margin: 9px;
+  background-color:  rgb(104, 101, 101);
+  color: rgb(155, 11, 83);
+  text-decoration: none;
+  font-size: 28px;
+}
+
+.pixabay {
+  font-size: 16px;
+  color: black;
+  opacity: 0.6;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}  
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex-basis: 450px;
+  max-height: 400px;
+  margin-bottom: 10%;
+}
+
+.portfolio-item-title {
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.548);
+  position: absolute;
+  top: 3%;  /* position the top  edge of the element at the 3% of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%); 
+}
+
+/*moraš i tu zadati širinu*/
+.portfolio-item-img {
+  flex-basis: 450px;
+  max-height: 400px;  
+ }
+
+.portfolio-item-text {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%); 
+  color: white;
+  background-color: rgba(66, 57, 57, 0.541);
+  padding: 4px;
+}
+
+footer {
+  margin-top: -50px;
+  background-image: linear-gradient(to right, #3a404969, #44535965, #5467666b, #6b79706e, #878b7c79);
+  height: 100px;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 400px) {
+  #header-img {height: 35vh;}
+  .header-text {font-size: 23px; top: 19%; height: 50%;}
+  .pixabay {font-size: 15px;}
+  .portfolio-item {margin: 35px 10px;}
+  .portfolio-item-img { width: 300px;}
+  footer {margin-top: 40px;}
+}
+
+@media only screen and (max-width: 768px) {
+  #header-img {height: 45vh;}
+  .portfolio-item-img { width: 380px;}
+}
+
+
+
